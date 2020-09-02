@@ -8,7 +8,7 @@ from .forms import RegistrationForm
 class EmployeeAdmin(BaseUserAdmin):
     form = RegistrationForm
 
-    list_display = ('email', 'name', 'mobile', 'date_of_birth', 'is_staff',  'is_superuser')
+    list_display = ('email', 'name', 'mobile', 'date_of_birth', 'organization', 'designation', 'is_staff',  'is_superuser')
     list_filter = ('is_superuser',)
 
     fieldsets = (

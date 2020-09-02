@@ -28,7 +28,7 @@ class EmployeeAdmin(BaseUserAdmin):
     )
 
     search_fields = ('email', 'name', 'mobile')
-    ordering = ('email',)
+    ordering = ('email', 'name')
     filter_horizontal = ()
 
 

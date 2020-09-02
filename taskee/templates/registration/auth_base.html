@@ -1,20 +1,31 @@
-<!doctype  html>
-<html  lang="en">
-<head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<title>Listings</title>
-</head>
-<body>
-
-  <div  class="container">
-    <div  class="row justify-content-center">
-      <div  class="col-4">
-      <h1  class="text-center">Listings</h1>
-      {% block content %}
-
-      {% endblock %}
-      </div>
-    </div>
-  </div>
-</body>
+<!doctype html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<title>{% block title %}Taskee{% endblock %}</title>
+		<style type="text/css">
+			.errorlist {
+				margin: 0;
+				padding: 0;
+			}
+			.errorlist li {
+				list-style: none;
+				font-size: 90%;
+				color: red;
+			}
+			.errorlist ~ input,
+			.errorlist ~ select {
+				border-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Taskee</h1>
+		<hr>
+			{% block content %}
+			
+			{% endblock %}
+	</body>
 </html>
+
+

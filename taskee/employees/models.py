@@ -37,8 +37,6 @@ class Employee(User):
     class Meta:
         verbose_name_plural = 'Employees'
 
-
-
 class Manager(Employee):
     class Meta:
         proxy = True

@@ -25,11 +25,11 @@
            1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-2z"/>
         </svg> 
   </label>
-  <a href="emp" style="margin-left:60%;text-decoration:none;"><span style="font-size: 10px; color:#000;font-weight:bold; margin-top:10%">Add user?</span></a>
+  <a href="{% url 'register' %}" style="margin-left:60%;text-decoration:none;"><span style="font-size: 10px; color:#000;font-weight:bold; margin-top:10%">Add User</span></a>
 
   <div style="margin-left: 80%;">
   <h2>Hai Welcome</h2>
-  <span>Hello,{{request.user}} </span>
+  <span>Hello,{{ request.user }} </span>
 
   <span><a href="{%url 'logout' %}">Logout</a> </span>
 

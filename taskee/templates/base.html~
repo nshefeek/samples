@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>{% block title %}Taskee{% endblock %}</title>
-		<style type="txt/css">
+		<style type="text/css">
 			.errorlist {
 				margin: 0;
 				padding: 0;
