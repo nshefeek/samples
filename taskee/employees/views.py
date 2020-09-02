@@ -4,7 +4,7 @@ from django.contrib import messages
 from django.contrib.auth.forms import AuthenticationForm
 from django.shortcuts import render
 
-from django.contrib.auth.mixins import LogiRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import ListView
 from django.views.generic.edit import CreateView, UpdateView
 from django.urls import reverse
@@ -18,7 +18,7 @@ class RegistrationView(CreateView):
     form_class = RegistrationForm
 
     def get_context_data(self, *args, **kwargs):
-        context = super(RegistrationView, self).gert_context_data(*args, **kwargs)
+        context = super(RegistrationView, self).get_context_data(*args, **kwargs)
         context['next'] = self.request.GET.get('next')
         return context
 
