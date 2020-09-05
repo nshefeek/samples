@@ -3,7 +3,7 @@ from django.contrib.auth import authenticate, login as auth_login, logout
 from django.contrib import messages
 from django.contrib.auth.forms import AuthenticationForm
 from django.shortcuts import render
-
+from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import ListView
 from django.views.generic.edit import CreateView, UpdateView
@@ -23,11 +23,15 @@ class RegistrationView(CreateView):
         return context
 
 
-    def get_success_url(self):
-        next_url = self.request.POST.get('next')
-        success_url = reverse('login')
-        if next_url:
-            success_url += '?next={}'.format(next_url)
+    # def get_success_url(self):
+    #     next_url = self.request.POST.get('next')
+    #     success_url = reverse('login')
+    #     if next_url:
+    #         success_url += '?next={}'.format(next_url)
 
-        return success_url
+    #     return success_url
+
+    def get_success_url(self, *args, **kwargs):
+        messages.success(
+        self.request, _("You are now signed up... and now you can sign in!"))
 

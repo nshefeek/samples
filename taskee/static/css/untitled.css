@@ -1,0 +1,65 @@
+.bg-light {
+  background-color: #ffffff!important;
+}
+
+.test {
+  text-align: center;
+  background: white;
+  border-radius: 25px 0px 0px 25px;
+}
+
+.test:hover {
+  cursor: pointer;
+  color: white;
+  background: rgb(62,64,152);
+}
+
+.test1 {
+  text-align: center;
+  background: white;
+}
+
+.test2 {
+  text-align: center;
+  background: white;
+  border-radius: 0px 25px 25px 0px;
+}
+
+.test1:hover {
+  cursor: pointer;
+  color: white;
+  background: rgb(62,64,152);
+}
+
+.test3 {
+  text-align: center;
+  background: white;
+  border-radius: 0px 25px 25px 0px;
+}
+
+.test3:hover {
+  cursor: pointer;
+  color: rgb(255,255,255);
+  background: rgb(62,64,152);
+}
+
+.fa.fa-plus-circle.corner-icon:hover {
+  cursor: pointer;
+}
+
+.col-form-label.sliderlabel:hover {
+  cursor: pointer;
+}
+
+.fa.fa-bars.sliderlabel:hover {
+  cursor: pointer;
+}
+
+.fas.fa-search.searchButtonNavbar:hover {
+  cursor: pointer;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+

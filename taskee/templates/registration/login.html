@@ -1,8 +1,20 @@
-{% extends "registration/auth_base.html" %}
+{% load static %}
 {% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html>
 
-{% block content %}
-
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Login</title>
+    <link rel="stylesheet" href="{%static 'bootstrap/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="{%static 'fonts/fontawesome-all.min.css'%}">
+    <link rel="stylesheet" href="{%static 'fonts/font-awesome.min.css'%}">
+    <link rel="stylesheet" href="{%static 'fonts/fontawesome5-overrides.min.css'%}">
+    <link rel="stylesheet" href="{%static 'css/untitled.css'%}">
+</head>
+<body>
 <div class="card">
   <div class="card-body">
     <h4 class="card-title">Log in to your account</h4>
@@ -14,9 +26,6 @@
   </div>
   <div class="card-footer">
     Forgot your password? <a href="{% url "password_reset" %}">click here</a><br>
-    New user? <a href="{% url "register" %}?next={{ next }}">create new account</a>
   </div>
 </div>
-
-{% endblock %}
-
+</body>

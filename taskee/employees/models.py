@@ -21,6 +21,7 @@ class Employee(User):
             ("STAFF", "Staff"),
             )
             
+    is_staff = True
     mobile = PhoneNumberField(unique=True, null=False)
     date_of_birth = models.DateField(null=True)
     department = models.CharField(_('Department'), max_length=50, choices=departments, default="SALES")

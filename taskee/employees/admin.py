@@ -14,14 +14,14 @@ class EmployeeAdmin(BaseUserAdmin):
     fieldsets = (
         (None, {'fields': ('email', 'is_staff', 'is_superuser', 'password')}),
         ('Personal info', {'fields': ('name', 'mobile', 'date_of_birth', 'photograph')}),
-        ('Organization info', {'fields': ('organization', 'department', 'designation', 'reporting_to', 'is_active', 'last_login', 'date_joined')}),
+        ('Organization info', {'fields': ('organization', 'department', 'designation', 'reporting_to', 'is_active')}),
         ('Groups', {'fields': ('groups',)}),
         ('Permissions', {'fields': ('user_permissions',)}),
     )
     add_fieldsets = (
         (None, {'fields': ('email', 'is_staff', 'is_superuser', 'password1', 'password2')}),
         ('Personal info', {'fields': ('name', 'mobile', 'date_of_birth', 'photograph')}),
-        ('Organizationl info', {'fields': ('organization', 'department', 'designation', 'reporting_to', 'is_active', 'last_login', 'date_joined')}),
+        ('Organizationl info', {'fields': ('organization', 'department', 'designation', 'reporting_to', 'is_active')}),
 
         ('Groups', {'fields': ('groups',)}),
         ('Permissions', {'fields': ('user_permissions',)}),
